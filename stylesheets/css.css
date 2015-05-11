@@ -47,41 +47,6 @@ a {
     margin-top: -1px;
     width: 250px;
 }
-/*---[  ]--*/
-.text-medium {
-    font-size: 20px;
-}
-.text-large {
-    font-size: 30px;
-}
-.button {
-    display: inline-block;
-    font-weight: 600;
-}
-.button-small {
-    border-radius: 2px;
-    padding: 5px 10px;
-}            
-.button-medium {
-    border-radius: 3px;
-    padding: 10px 18px;
-}
-.button-large {
-    border-radius: 5px;
-    padding: 15px 25px;
-}
-.bg-green {
-    background-color: #7fbb00;
-}
-.button > a, .button > span {
-    color: #fff;
-}
-.button i {
-    padding-right: 10px;
-}
-
-/*---[ grid ]--*/
-
 
 /*---[ containers ]--*/
 .topbar, .header, .slider, .content, .footer {
@@ -123,6 +88,9 @@ a {
     .menu-item > a {
         color: #ffffff;
     }
+	.menu-item > a:hover {
+		color: #ff6445;
+	}
     .current-menu-item > a {
         color: #ff6445;
     }
@@ -154,7 +122,10 @@ a {
 
 /*---[ content ]--*/
 #content {
-    padding: 40px 0 60px;
+    padding: 0 0 60px;
+}
+.features {
+	padding: 0 0 40px;
 }
 .test-runner {
     border: 1px solid #ddd;
@@ -169,6 +140,99 @@ a {
 }
 #footer {
     padding: 40px 0;
+}
+
+/*---[ grid ]--*/
+.col {
+	display: inline-block;
+}
+.col-md-12 {
+	width: 49%;
+}
+.col-md-13 {
+	width: 32.33%;
+}
+.col-md-23 {
+	width: 66.66%;
+}
+.col img {
+    display: block;
+    height: auto;
+}
+
+/*---[ elements ]--*/
+.text-medium {
+    font-size: 20px;
+}
+.text-large {
+    font-size: 30px;
+}
+.button {
+    display: inline-block;
+    font-weight: 700;
+}
+.button-small {
+    border-radius: 2px;
+    padding: 5px 10px;
+}            
+.button-medium {
+    border-radius: 3px;
+    padding: 10px 18px;
+}
+.button-large {
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.bg-green {
+    background-color: #7fbb00;
+}
+.button > a, .button > span {
+    color: #fff;
+}
+.button i {
+    padding-right: 10px;
+}
+.right-align {
+	text-align: left;
+}
+.right-align {
+	text-align: right;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+	/*---[ box ]--*/
+	.box {
+		padding-right: 20px;
+	}
+	.box .icon {
+		background-color: #ff6445;
+		border-radius: 100%;
+		color: white;
+		float: left;
+		margin-right: 20px;
+		padding: 20px 27px;
+	}
+	.box .content {
+		float: right;
+	}
+	.box h3 {
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+	.box p {
+		font-size: 15px;
+	}
+
+
+/*---:[ misc ]:---*/
+.features .col-md-13 img {
+	margin-left: 50px;
+	margin-top: 25px;
 }
 
 /*---:[ media queries ]:---*/
