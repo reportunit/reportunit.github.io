@@ -1,0 +1,177 @@
+/*---[ layout structure ]--*/
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: Roboto, 'Open Sans','Noto Sans',Lato,Helvetica,Georgia,serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+h2, h3, h4, h5 {
+    color: 1d262f;
+    font-family: 'Titillium Web',Raleway,Georgia,serif;
+}
+h2 {
+    color: #ff6445;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+}
+h3 {
+    font-size: 20px;
+    line-height: 48px;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+a {
+    color: #ff6445;
+    text-decoration: none;
+}
+
+/*---:[ headers ]:---*/
+.h2-border {
+    border-bottom: 1px solid #ff6445;
+    margin-top: 5px;
+    width: 40px;
+}
+.h2-border-2 {
+    border-bottom: 1px solid #cccccc;
+    margin-left: 40px;
+    margin-top: -1px;
+    width: 250px;
+}
+/*---[  ]--*/
+.text-medium {
+    font-size: 20px;
+}
+.text-large {
+    font-size: 30px;
+}
+.button {
+    display: inline-block;
+    font-weight: 600;
+}
+.button-small {
+    border-radius: 2px;
+    padding: 5px 10px;
+}            
+.button-medium {
+    border-radius: 3px;
+    padding: 10px 18px;
+}
+.button-large {
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.bg-green {
+    background-color: #7fbb00;
+}
+.button > a, .button > span {
+    color: #fff;
+}
+.button i {
+    padding-right: 10px;
+}
+
+/*---[ grid ]--*/
+
+
+/*---[ containers ]--*/
+.topbar, .header, .slider, .content, .footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#topbar, #header, #slider, #content, #footer {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+/*---[ topbar ]--*/
+
+/*---[ header ]--*/
+    #header {
+        padding: 10px 0 15px;
+    }
+    #site-title {
+        font-size: 15px;
+    }
+    
+    /*---[ menu ]--*/
+    .menu {
+        float: right;
+        margin-top: -38px;
+    }
+    .menu li {
+        color: #ffffff;    
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        list-style: none;
+        padding-right: 20px;
+    }
+    .menu li:last-child {
+        padding-right: 0;
+    }
+    .menu-item > a {
+        color: #ffffff;
+    }
+    .current-menu-item > a {
+        color: #ff6445;
+    }
+    .search {
+        color: #999;
+    }
+
+/*---[ slider ]--*/            
+.header {
+    background: url("http://relevantcodes.com/images/orangeunit.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    min-height: 500px;
+}
+#slider {
+    color: #fff;
+    padding: 20px 0;
+}
+.download-area {
+    
+}
+.orangeunit-description {
+    max-width: 600px;
+    padding: 30px 0 40px;
+}
+.orangeunit-description > span {
+    font-family: open sans;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*---[ content ]--*/
+#content {
+    padding: 40px 0 60px;
+}
+.test-runner {
+    border: 1px solid #ddd;
+    display: inline;
+    margin-right: 10px;
+    padding: 20px 30px;
+}
+
+/*---[ footer ]--*/
+.footer {
+    background-color: #eee;
+}
+#footer {
+    padding: 40px 0;
+}
+
+/*---:[ media queries ]:---*/
+@media all and (max-width: 1150px) {
+    #topbar, #header, #slider, #content, #footer { width: 80%; }
+}
