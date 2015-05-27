@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='description' content='ReportUnit description' />
+        <meta name='robots' content='noodp, noydir' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600|Roboto:300,400,700|Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='./stylesheets/css.css'>
+        <title>ReportUnit</title>
+    </head>
+    <body>
+        <div class='reportunit-container'>
+			
+			<!-- [ topbar ] -->
+            <div class='topbar'>
+                <div id='topbar'>
+                    
+                </div>
+            </div>
+			
+			<!-- [ header ] -->
+            <div class='header'>
+                <div id='header'>
+                    <h1 id='site-title'><a href='#'>ReportUnit</a></h1>
+                    <ul class='menu'></ul>    
+                </div>
+			</div>	
+			
+			<!-- [ slider ] -->
+			<div class='slider'>
+				<div id='slider'></div>
+			</div>
+			
+			<!-- [ content ] -->
+            <div class='content'>
+                <div id='content'>
+				
+					<!-- [ usage ] -->
+					<div class='usage'>
+						<h2>Usage</h2>
+						<p>You can either generate a report for all files in a folder, or simply convert a given file. Both methods are shown below.</p>
+						<h3>Folders</h3>
+						<p>If there are multiple files to process, simply move them to a folder and run one of the below commands:</p>
+						<pre>reportunit [input-folder-path]
+reportunit [input-folder-path] [output-folder-path]</pre>
+<pre>
+// all files will be created in the current folder
+reportunit .
+
+// all files will be created in the my-folder
+reportunit "c:\my-folder"
+
+// files will be created in output-folder
+reportunit "c:\my-folder" "c:\output-folder" 
+</pre>
+						
+						<h3>Files</h3>
+						<p>Use below to process single files:</p>
+						<pre>reportunit [input-file]
+reportunit [input-file] [output-file]</pre>
+<pre>
+reportunit "C:\my-folder\result.xml"
+reportunit "C:\my-folder\result.xml" reportunit "C:\output-folder\report.html"
+</pre>
+					</div>
+                </div>
+            </div>
+			
+			<!-- [ footer ] -->
+            <div class='footer'>
+                <div id='footer'></div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script src="./scripts/script.js"></script> 
+    </body>
+</html>
