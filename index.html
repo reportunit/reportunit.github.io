@@ -4,149 +4,11 @@
         <meta name='description' content='ReportUnit description' />
         <meta name='robots' content='noodp, noydir' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600|Roboto:300,400,700|Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
         <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 		<link rel='stylesheet' href='./css/kube.min.css'>
+		<link rel='stylesheet' href='./css/css.css'>
         <title>ReportUnit</title>
-		<style>
-			html, body {
-				margin: 0;
-				padding: 0;
-			}
-			body {
-				font-family: Roboto, 'Open Sans', Arial;
-				font-size: 14px;
-			}
-			a {
-				text-decoration: none;
-			}
-			pre {
-				background: #f7f8fa;
-				border-radius: 5px;
-				font-size: 13px;
-				padding: 15px;
-			}
-			button {
-				margin-right: 5px !important;
-			}
-			button i {
-				padding-right: 5px;
-			}
-			button a {
-				color: #000; 
-			}
-			
-			/* ---- [ global structure ] ---- */
-			.credits-area, .developers-area, .credits-area, .usage-area, .intro-area {
-				padding: 100px 0;
-			}
-			.left { 
-				float: left !important; 
-			}
-			.right { 
-				float: right !important; 
-			}
-			.heading-underline-right {
-				border-top: 3px solid #222;
-				float: left;
-				margin-left: 1px;
-				width: 20px;
-			}
-			.heading-underline-left {
-				border-top: 3px solid #aaa;
-				float: left;
-				width: 20px;
-			}
-			.text-white {
-				color: #fff;
-			}
-			
-				/* ---- [ bg ] ---- */
-				.bg-gray {
-					background-color: #f7f7f7;
-				}
-				.bg-inverse {
-					background-color: #222 !important;
-				}
-				.bg-inverse .heading-underline-right {
-					border-top: 3px solid #fff;
-				}
-				.bg-inverse div, .bg-inverse span, .bg-inverse p, .bg-inverse h1, .bg-inverse h2, .bg-inverse h3, .bg-inverse h4 {
-					color: #fff;
-				}
-				
-				/* ---- [ box ] ---- */
-				.box {
-					background-color: #3d3d3d;
-					border-radius: 5px;
-					padding: 20px;
-				}
-				.box a {
-					color: #fff;
-				}
-				.box > div {
-					display: table-cell;
-					vertical-align: top;
-				}
-				.box-thumb {
-					padding-right: 25px;
-				}
-				.box-thumb img {
-					border-radius: 100%;
-					max-width: 60px;
-				}
-				.box-title {
-					font-weight: 500;
-				}
-			
-			/* ---- [ slider ] ---- */
-			.slider {
-				background-image: url('./img/reportunit.jpg');
-				background-position: 0 -150px;
-				background-size: cover;
-				height: 400px;
-				min-height: 400px;
-			}
-			
-			/* ---- [ header ] ---- */
-			.header {
-				padding-top: 25px;
-			}
-			.logo {
-				font-size: 15px;
-			}
-			.logo i {
-				font-size: 14px;
-				padding-right: 10px
-			}
-			
-			/* ---- [ main ] ---- */
-			.intro-area {
-				padding-bottom: 70px;
-			}
-			
-			/* ---- [ footer ] ---- */
-			.footer {
-				margin-bottom: -50px !important;
-				padding: 25px 0 5px;
-			}
-			.footer span {
-				display: block;
-				font-size: 13px;
-			}
-			
-			/* ---- [ media queries ] ---- */
-			@media all and (max-width: 900px) {
-				.slider {
-					background-position: 0;
-				}
-			}
-			@media all and (max-width: 768px) {
-				.unit-80 {
-					padding-top: 30px;
-				}
-			}
-		</style>
     </head>
 	<body>
 		<div class='container'>
@@ -155,7 +17,7 @@
 					<div class='unit-centered unit-80 top-unit'>
 						<div class='left'>
 							<div class='logo'>
-								<span><i class='fa fa-desktop'></i>ReportUnit</span>
+								<span>ReportUnit</span>
 							</div>
 						</div>
 						<div class='right'>
@@ -226,8 +88,48 @@ reportunit "C:\my-folder\result.xml" reportunit "C:\output-folder\report.html"
 						</div>
 					</div>
 				</div>
+				<div class='samples-area  bg-gray'>
+					<div class='units-row'>
+						<div class='unit-100'>
+							<div class='unit-80 centered top-unit'>
+								<div class="units-row end">
+									<div class="unit-20">
+										<h1>Samples</h1>
+										<div class='heading-underline-left'></div><div class='heading-underline-right'></div>
+									</div>
+									<div class='unit-80'>
+										<p>A few live samples:</p>
+										<ul>
+											<li><a href='http://relevantcodes.com/Tools/ReportUnit/Index.html'>Folder - Executive Summary</a></li>
+											<li><a href='http://relevantcodes.com/Tools/ReportUnit/NUnit-TestResult.html'>Folder - Single File</a></li>
+											<li><a href='http://relevantcodes.com/Tools/ReportUnit/NUnit-TestResult-standalone.html'>File Level</a></li>
+										</ul>
+										<p>Screenshots:</p>
+										<img class='bordered-img' src='./img/folder.png' />
+										<img class='bordered-img' src='./img/file.png' />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class='issues-area'>
-				
+					<div class='units-row'>
+						<div class='unit-100'>
+							<div class='unit-80 centered top-unit'>
+								<div class="units-row end">
+									<div class="unit-20">
+										<h1>Issues</h1>
+										<div class='heading-underline-left'></div><div class='heading-underline-right'></div>
+									</div>
+									<div class='unit-80'>
+										<p>Issues and FRs can be submitted directly on <a href='https://github.com/reportunit/reportunit/issues'>ReportUnit GitHub</a> page. </p>
+										<p>Note: you will have to create a GitHub account if you do not already have one.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class='developers-area bg-inverse'>
 					<div class='units-row'>
@@ -261,7 +163,7 @@ reportunit "C:\my-folder\result.xml" reportunit "C:\output-folder\report.html"
 											</li>
 											<li>
 												<div class='box'>
-													<div class='box-thumb'><a href='https://github.com/Andrey-Bushman'><img src='./img/andrey.png'></a></div>
+													<div class='box-thumb'><a href='http://bushman-andrey.blogspot.ru/'><img src='./img/andrey.png'></a></div>
 													<div>
 														<div class='box-title'>Andrey Bushman</div>
 														<div class='box-body'></div>
@@ -294,17 +196,7 @@ reportunit "C:\my-folder\result.xml" reportunit "C:\output-folder\report.html"
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 		<script>
 			$(document).ready(function() {
-				$(document).ready(sizing);
-				$(window).resize(sizing);
-				function sizing() {
-					if ($(window).width() > 1650) {
-						$('.top-unit').removeClass('unit-80').addClass('unit-70');
-					} else if ($(window).width() < 1120) {
-						$('.top-unit').removeClass('unit-70').addClass('unit-80');
-					} else {
-						$('.top-unit').removeClass('unit-70, unit-80').addClass('unit-90');
-					}
-				}
+				
 			});
 		</script>
 	</body>
