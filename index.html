@@ -21,9 +21,12 @@
 							</div>
 						</div>
 						<div class='right'>
-							<a class='text-white' href='http://relevantcodes.com/wp-content/plugins/download-monitor/download.php?id=16'><button class='btn btn-green right btn-smaller'><i class='fa fa-download'></i>Download</button></a>
+							<a class='text-white' href='http://relevantcodes.com/wp-content/plugins/download-monitor/download.php?id=16'><button class='btn btn-green right btn-smaller' onclick='$("#message-feedback").message();'><i class='fa fa-download'></i>Download</button></a>
 							<a href='https://github.com/reportunit/reportunit'><button class='btn right btn-smaller'><i class='fa fa-github'></i>GitHub</button></a>
 							<a href='http://relevantcodes.com/reportunit-report-generator/#comments'><button class='btn btn-smaller'><i class='fa fa-comments-o'></i>Feedback</button></a>
+							<div id="message-feedback" class="tools-message tools-message-yellow">
+								Thanks for downloading.  Your feedback helps.  Please consider dropping a quick comment <a href='http://relevantcodes.com/reportunit-report-generator/#comments'>here</a>.
+							</div>
 						</div>
 					</div>
 				</div>
@@ -204,20 +207,7 @@ reportunit "C:\my-folder\result.xml" reportunit "C:\output-folder\report.html"
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-		<script>
-			$(document).ready(function() {
-				$(document).ready(sizing);
-				$(window).resize(sizing);
-				function sizing() {
-					if ($(window).width() > 1650) {
-						$('.top-unit').removeClass('unit-80').addClass('unit-70');
-					} else if ($(window).width() < 1120) {
-						$('.top-unit').removeClass('unit-70').addClass('unit-80');
-					} else {
-						$('.top-unit').removeClass('unit-70, unit-80').addClass('unit-90');
-					}
-				}
-			});
-		</script>
+		<script src="./js/kube.min.js"></script> 
+		<script src="./js/scripts.js"></script> 
 	</body>
 </html>
