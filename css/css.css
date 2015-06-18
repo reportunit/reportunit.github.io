@@ -26,7 +26,7 @@ button a {
 }
 
 /* ---- [ global structure ] ---- */
-.credits-area, .developers-area, .issues-area, .usage-area, .intro-area, .samples-area {
+.version-area, .credits-area, .developers-area, .issues-area, .usage-area, .intro-area, .samples-area {
 	padding: 100px 0;
 }
 .left { 
